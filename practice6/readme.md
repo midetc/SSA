@@ -9,4 +9,9 @@
 ![](1.png)
 ![](2.png)
 ### [Код завдання](task1.c)
+Команди компиляції та перевірки
+- clang -fsanitize=address -g task1.c -o task1_asan
+- time ./task1_asan
+- clang task1.c -o task1_val
+- time valgrind --leak-check=full ./task1_val
 
